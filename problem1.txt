@@ -1,0 +1,15 @@
+function dotProduct(set1, set2) {
+  let sum = 0;
+  for (let i = 0; i < set1.length; i++) {
+    sum += set1[i] * set2[i]
+  }
+  return sum
+}
+
+for (let i = 0; i < set.length; i++) {
+  for (let j = i + 1; j < set.length; j++) {
+    if (dotProduct(set[i], set[j]) === 0) {
+      console.log(${set[i]} and ${set[j]} are orthogonal )
+    }
+  }
+}

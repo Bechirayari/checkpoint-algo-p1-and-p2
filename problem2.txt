@@ -1,0 +1,28 @@
+FUNCTION dot_product(v1, v2)
+    product = 0
+    FOR i = 0 to size of v1
+        product = product + v1[i] * v2[i]
+    END FOR
+    RETURN product
+END FUNCTION
+
+DECLARE V1, V2 as integer vectors
+DECLARE length1, length2, input, product as integers
+
+OUTPUT "Enter size of first vector:"
+INPUT length1
+OUTPUT "Enter size of second vector:"
+INPUT length2
+
+FOR i = 0 to length1
+    OUTPUT "Enter element", i+1, "of the first vector:"
+    INPUT input
+    V1.push_back(input)
+END FOR
+
+FOR i = 0 to length2
+    OUTPUT "Enter element", i+1, "of the second vector:"
+    INPUT input
+    V2.push_back(input)
+END FOR
+END dot_product
